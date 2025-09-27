@@ -1,0 +1,88 @@
+:root {
+  --primary: green;  /*nigeria flag color*/
+  --secondary: white; /*nigeria flag color*/
+  --neutral: #f4f4f4;
+  --text: #222;
+  --max-width: 1000px;
+  --font: "Arial", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--neutral);
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 5px solid var(--secondary);
+}
+
+/* Main Layout */
+main {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.3rem 0;
+}
+
+/* Weather pseudo-element (desktop view) */
+.weather-icon {
+  width: 40px;
+  display: block;
+  margin: 0.5rem 0;
+}
+@media (min-width: 700px) {
+  .weather-icon { display: none; }
+}
+
+
+/* Footer */
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Mobile-first layout (single column) */
+@media (min-width: 700px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}

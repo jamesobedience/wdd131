@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="James Imoh Obedience">
+  <meta name="description" content="Information about Nigeria including area, population, capital, languages, currency, time zone, calling code, internet TLD, and current weather.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nigeria</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Nigeria</h1>
+    <picture>
+      <source srcset="images/niger.webp" media="(min-width: 800px)">
+      <img src="images/niger.webp" alt="Landscape of Nigeria">
+    </picture>
+  </header>
+
+  <main>
+    <!-- Data Section -->
+    <section class="data">
+      <h2>Data</h2>
+      <ul>
+        <li><strong>Area:</strong> 923,769 sq km</li>
+        <li><strong>Population:</strong> 223,804,632</li>
+        <li><strong>Capital:</strong> Abuja</li>
+        <li><strong>Languages:</strong> English, Hausa, Yoruba, Igbo</li>
+        <li><strong>Currency:</strong> Nigerian Naira (₦)</li>
+        <li><strong>Time Zone:</strong> UTC+1</li>
+        <li><strong>Calling Code:</strong> +234</li>
+        <li><strong>Internet TLD:</strong> .ng</li>
+      </ul>
+    </section>
+
+    <!-- Weather Section -->
+    <section class="weather">
+  <h2 class="weather-title">Weather</h2>
+  <img src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="Sunny icon" class="weather-icon">
+  <ul>
+    <li><strong>Temperature:</strong> <span id="temperature">28</span> °C</li>
+    <li><strong>Conditions:</strong> Sunny</li>
+    <li><strong>Wind:</strong> <span id="wind">12</span> km/h</li>
+    <li><strong>Wind Chill:</strong> <span id="windChill">N/A</span></li>
+  </ul>
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> James Imoh Obedience ⓒ Nigeria</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
