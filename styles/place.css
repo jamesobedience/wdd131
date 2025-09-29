@@ -4,10 +4,10 @@
   --neutral: #f4f4f4;
   --text: #222;
   --max-width: 1000px;
-  --font: "Arial", sans-serif;
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   font-family: var(--font);
   color: var(--text);
@@ -69,6 +69,12 @@ li {
 @media (min-width: 700px) {
   .weather-icon { display: none; }
 }
+.weather-title::after {
+  content: " ☀️";
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
 
 
 /* Footer */
