@@ -1,6 +1,6 @@
 :root {
-  --primary: green;  /*nigeria flag color*/
-  --secondary: white; /*nigeria flag color*/
+  --primary: green;  /* Nigeria flag color */
+  --secondary: white; /* Nigeria flag color */
   --neutral: #f4f4f4;
   --text: #222;
   --max-width: 1000px;
@@ -9,7 +9,6 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  font-family: var(--font);
   color: var(--text);
   background: var(--neutral);
   line-height: 1.6;
@@ -74,8 +73,6 @@ li {
   font-size: 1.2rem;
   margin-left: 0.5rem;
 }
-
-
 
 /* Footer */
 footer {
