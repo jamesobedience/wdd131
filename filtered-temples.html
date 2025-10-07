@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="James Imoh Obedience">
+  <meta name="description" content="A dynamically filtered gallery of temples from around the world." />
+  <title>Filtered Temple Album</title>
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+  <script src="scripts/filtered-temples.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Temples</h1>
+    <button id="hamburger">&#9776;</button>
+    <nav id="nav-menu" class="hidden">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Home</h2>
+    <section class="gallery">
+      <!-- Temple cards will be injected here by JavaScript -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | James Imoh Obedience | WDD 131</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

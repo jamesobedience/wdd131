@@ -1,4 +1,4 @@
-/* temples.css - mobile first */
+/* filtered-temples.css - mobile first */
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -39,7 +39,6 @@ nav {
   top: 100%;
   left: 0;
   width: 100%;
-  gap: 5rem;
 }
 
 nav a {
@@ -52,7 +51,6 @@ nav a {
 nav a:hover {
   background-color: #0055a5;
 }
-
 
 nav.show {
   display: flex;
@@ -72,14 +70,15 @@ main {
 
 .gallery img {
   width: 100%;
-  height: 55%;
+  height:350px;
   border-radius: 5px;
-} 
+  display: block;
+}
 
 
 figure {
   margin: 0;
-  border: 0.1px solid #ccc;
+  border: 1px solid #ccc;
   padding: 0.5rem;
   background-color: #fff;
 }
@@ -88,6 +87,7 @@ figcaption {
   text-align: center;
   padding-top: 0.5rem;
   font-style: italic;
+  font-size: 0.9rem;
 }
 
 footer {
