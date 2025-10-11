@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="James Imoh Obedience">
+  <meta name="description" content="A product review form for users to submit their feedback."> 
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+    <p>Please share your experience with our products!</p>
+  </header>
+
+  <main>
+    <form action="review.html" method="get" id="reviewForm">
+    
+      <label for="productName">Product Name:</label>
+      <select id="productName" name="productName" required>
+        <option value="" disabled selected>Select a Product ...</option>
+      </select>
+
+      <fieldset class="rating">
+        <legend>Overall Rating:</legend>
+        <label><input type="radio" name="rating" value="1" required> ☆</label>
+        <label><input type="radio" name="rating" value="2"> ☆☆</label>
+        <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+        <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+        <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+      </fieldset>
+
+      <label for="installDate">Date of Installation:</label>
+      <input type="date" id="installDate" name="installDate" required>
+
+      <fieldset>
+        <legend>Useful Features (check all that apply):</legend>
+        <label><input type="checkbox" id="feature1" name="features" value="Easy Setup"> Easy Setup</label>
+        <label><input type="checkbox" id="feature2" name="features" value="Durable"> Durable</label>
+        <label><input type="checkbox" id="feature3" name="features" value="Affordable"> Affordable</label>
+        <label><input type="checkbox" id="feature4" name="features" value="Energy Efficient"> Energy Efficient</label>
+      </fieldset>
+
+      <label for="reviewText">Written Review (optional):</label>
+      <textarea id="reviewText" name="reviewText" rows="4" placeholder="Share your thoughts..."></textarea>
+
+      <label for="userName">Your Name (optional):</label>
+      <input type="text" id="userName" name="userName" placeholder="James Obedience">
+
+      <input type="submit" value="Submit Review" class="submitBtn">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | James Imoh Obedience | WDD 131 | Product Review Form</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
